@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>注册页面</title>
+        <link href="tools/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/all.css" />
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        
+        <!--1,导航条-->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+        	<div class="container navbar-text text-center">
+        		<span class="glyphicon glyphicon-chevron-left pull-left" id="back"></span>
+        		<strong>注册</strong>
+        	</div>
+        </nav>
+        
+        <!--2,注册表单-->
+        <div class="container">
+        	<form>
+        		<div class="form-group">
+        			<input type="text" name="userName"  placeholder="请输入账号/用户名" class="form-control" required="required" pattern="[0-9a-zA-Z\u4e00-\u9fa5]{2,10}"/>
+        		</div>
+        		<div class="form-group">
+        			<input type="password" name="password"  placeholder="请输入密码" class="form-control" required="required" pattern="[0-9a-zA-Z]{6,16}"/>
+        		</div>
+        		<div class="form-group">
+        			<input type="password"  placeholder="请重新输入密码" class="form-control" required="required" pattern="[0-9a-zA-Z]{6,16}"/>
+        		</div>
+        		<div class="checkbox">
+        			<input type="radio" name="sex" checked="" value="man" /> 先生   &#x3000;
+        			<input type="radio" name="sex"  value="woman" /> 女士
+        		</div>
+        		<div class="form-group">
+        			<input type="email" name="email"  placeholder="请输入邮箱" class="form-control" />
+        		</div>
+        		<input type="submit" value="提交注册" class="form-control btn btn-success" />
+        	</form>
+        </div>
+        
+        <!--模态框-->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-dialog">
+		        <div class="modal-content">
+		            <div class="modal-header">
+		                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                <h4 class="modal-title" id="myModalLabel">在线问答</h4>
+		            </div>
+		            <div class="modal-body"></div>
+		            <div class="modal-footer">
+		                <button type="button" class="btn btn-primary" data-dismiss="modal">确认</button>
+		                
+		            </div>
+		        </div><!-- /.modal-content -->
+		    </div><!-- /.modal -->
+		</div>
+        
+        
+        
+    </body>
+    <script src="tools/bootstrap/js/jquery.min.js"></script>
+    <script src="tools/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/register.js"></script>
+</html>

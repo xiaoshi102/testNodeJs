@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>回答页面</title>
+        <link href="tools/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/all.css" />
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        
+         <!--1,导航条-->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+        	<div class="container navbar-text text-center">
+        		<span class="glyphicon glyphicon-chevron-left pull-left" id="back"></span>
+        		<strong>回答</strong>
+        	</div>
+        </nav>
+        
+        
+        <!--2,提问表单-->
+        <div class="container">
+        	<form>
+        		<div class="form-group">
+        			<textarea class="form-control" name="answer" rows="10" cols="40" placeholder="请输入你的答案" required="required"></textarea>
+        		</div>
+				<input type="submit" value="提交答案" class="form-control btn btn-success" />
+        	</form>
+        </div>
+        
+        
+         <!--模态框-->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-dialog">
+		        <div class="modal-content">
+		            <div class="modal-header">
+		                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                <h4 class="modal-title" id="myModalLabel">在线问答</h4>
+		            </div>
+		            <div class="modal-body"></div>
+		            <div class="modal-footer">
+		                <button type="button" class="btn btn-primary" data-dismiss="modal">确认</button>
+		                
+		            </div>
+		        </div><!-- /.modal-content -->
+		    </div><!-- /.modal -->
+		</div>
+        
+     
+    </body>
+    <script src="tools/bootstrap/js/jquery.min.js"></script>
+    <script src="tools/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/answer.js"></script>
+</html>

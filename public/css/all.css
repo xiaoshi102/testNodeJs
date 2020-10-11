@@ -1,0 +1,8 @@
+body{
+	/*把导航条的位置留出来,防止下面的内容被覆盖*/
+	padding-top: 65px;
+}
+
+.navbar span{
+	cursor: pointer;
+}
